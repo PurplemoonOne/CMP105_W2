@@ -24,6 +24,20 @@ private:
 	sf::RenderWindow* window;
 	Input* input;
 
+	std::string str_mouseCoords;
+	sf::Text txt_mouseCoords;
+	sf::Text mouse_dst;
+	sf::Font font;
+
+	int CalculateDistance(sf::Vector2i& init_coord, sf::Vector2i& last_coords);
+	int mouseCoordsDst;
+	bool mouseDown;
+
+	sf::Vector2i init_mouseCoordinates;
+	sf::Vector2i recent_mouseCoordinates;
+
+	sf::CircleShape circle;
+
 	// Add your object here
 
 };

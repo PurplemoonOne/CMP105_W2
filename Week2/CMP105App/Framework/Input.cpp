@@ -69,3 +69,5 @@ bool Input::isMouseRDown()
 	return mouse.right;
 }
 
+
+
